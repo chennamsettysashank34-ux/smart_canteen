@@ -17,7 +17,7 @@ A unified, real-time Smart Canteen management platform designed to eliminate lon
 
 ---
 
-## 🏆 Hackathon Feature Plan Matrix
+## 🏆 Hackathon Feature Plan Matrix Winner
 
 ### P0 — MUST HAVE (Completed)
 - [x] **Menu with real-time availability**: Dosa, Sandwich, Tea, Veg Puff with real-time stock and prices.
