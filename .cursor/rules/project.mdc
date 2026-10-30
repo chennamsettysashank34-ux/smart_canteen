@@ -1,0 +1,6 @@
+---
+description: Smart Canteen architecture, coding standards and security requirements
+globs: **/*
+alwaysApply: true
+---
+Read `AGENTS.md` and `SMART_CANTEEN_PROJECT.md`. Use Next.js App Router + TypeScript + Tailwind for web UI, Express for API, PostgreSQL + Prisma for persistent data. Keep the queue engine independent of UI. Backend/database are authoritative for price, stock, status, permissions and counter assignment. Validate external input. Use database transactions for stock, token, and counter concurrency. Keep estimates distinct from actual timestamps. Keep changes narrow, add tests, and do not claim tests passed unless executed. Optional gamification/payment work must not delay core ordering and queue correctness.

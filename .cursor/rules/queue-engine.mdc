@@ -1,0 +1,6 @@
+---
+description: Apply when modifying queue allocation, preparation time, ETA, counters or waiting-time statistics
+globs: engine/**, apps/api/src/**/queue/**
+alwaysApply: false
+---
+Read the engine comments and tests first. Preserve deterministic tie-breaks, counter compatibility checks, one order per counter, and the stated batch model unless explicitly changing the data model. Distinguish remaining wait, expected total wait, actual waiting time and queue-to-ready duration. Use identical inputs to compare scheduling strategies. Run `node --test engine/smartCanteenEngine.test.mjs` after any engine change. A forecast is not a persisted assignment; real assignments need backend transactions/locks.
